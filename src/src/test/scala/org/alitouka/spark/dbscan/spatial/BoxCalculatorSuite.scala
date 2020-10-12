@@ -1,8 +1,8 @@
-package org.alitouka.spark.dbscan.spatial
+package org.apache.spark.dbscan.spatial
 
-import org.alitouka.spark.dbscan.spatial.BoundsInOneDimension._
-import org.alitouka.spark.dbscan.{SuiteBase, DbscanSettings}
-import org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings
+import org.apache.spark.dbscan.spatial.BoundsInOneDimension._
+import org.apache.spark.dbscan.{SuiteBase, DbscanSettings}
+import org.apache.spark.dbscan.spatial.rdd.PartitioningSettings
 
 class BoxCalculatorSuite extends SuiteBase {
 

@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>IOHelper - org.alitouka.spark.dbscan.util.io.IOHelper</title>
-          <meta name="description" content="IOHelper - org.alitouka.spark.dbscan.util.io.IOHelper" />
-          <meta name="keywords" content="IOHelper org.alitouka.spark.dbscan.util.io.IOHelper" />
+          <title>IOHelper - org.apache.spark.dbscan.util.io.IOHelper</title>
+          <meta name="description" content="IOHelper - org.apache.spark.dbscan.util.io.IOHelper" />
+          <meta name="keywords" content="IOHelper org.apache.spark.dbscan.util.io.IOHelper" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../../../index.html';
-            var hash = 'org.alitouka.spark.dbscan.util.io.IOHelper$';
+            var hash = 'org.apache.spark.dbscan.util.io.IOHelper$';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -25,7 +25,7 @@
         <body class="value">
       <div id="definition">
         <img src="../../../../../../lib/object_big.png" />
-        <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.alitouka">alitouka</a>.<a href="../../../package.html" class="extype" name="org.alitouka.spark">spark</a>.<a href="../../package.html" class="extype" name="org.alitouka.spark.dbscan">dbscan</a>.<a href="../package.html" class="extype" name="org.alitouka.spark.dbscan.util">util</a>.<a href="package.html" class="extype" name="org.alitouka.spark.dbscan.util.io">io</a></p>
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.apache">apache</a>.<a href="../../../package.html" class="extype" name="org.apache.spark">spark</a>.<a href="../../package.html" class="extype" name="org.apache.spark.dbscan">dbscan</a>.<a href="../package.html" class="extype" name="org.apache.spark.dbscan.util">util</a>.<a href="package.html" class="extype" name="org.apache.spark.dbscan.util.io">io</a></p>
         <h1>IOHelper</h1>
       </div>
 
@@ -59,7 +59,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.alitouka.spark.dbscan.util.io.IOHelper"><span>IOHelper</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.apache.spark.dbscan.util.io.IOHelper"><span>IOHelper</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -305,8 +305,8 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.util.io.IOHelper#readDataset" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="readDataset(sc:org.apache.spark.SparkContext,path:String):org.alitouka.spark.dbscan.RawDataSet"></a>
+    </li><li name="org.apache.spark.dbscan.util.io.IOHelper#readDataset" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readDataset(sc:org.apache.spark.SparkContext,path:String):org.apache.spark.dbscan.RawDataSet"></a>
       <a id="readDataset(SparkContext,String):RawDataSet"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -314,14 +314,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">readDataset</span><span class="params">(<span name="sc">sc: <span class="extype" name="org.apache.spark.SparkContext">SparkContext</span></span>, <span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../package.html#RawDataSet=org.apache.spark.rdd.RDD[org.alitouka.spark.dbscan.spatial.Point]" class="extmbr" name="org.alitouka.spark.dbscan.RawDataSet">RawDataSet</a></span>
+        <span class="name">readDataset</span><span class="params">(<span name="sc">sc: <span class="extype" name="org.apache.spark.SparkContext">SparkContext</span></span>, <span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../package.html#RawDataSet=org.apache.spark.rdd.RDD[org.apache.spark.dbscan.spatial.Point]" class="extmbr" name="org.apache.spark.dbscan.RawDataSet">RawDataSet</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Reads a dataset from a CSV file.</p><div class="fullcomment"><div class="comment cmt"><p>Reads a dataset from a CSV file. That file should contain double values separated by commas
-</p></div><dl class="paramcmts block"><dt class="param">sc</dt><dd class="cmt"><p>A SparkContext into which the data should be loaded</p></dd><dt class="param">path</dt><dd class="cmt"><p>A path to the CSV file</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="../../package.html#RawDataSet=org.apache.spark.rdd.RDD[org.alitouka.spark.dbscan.spatial.Point]" class="extmbr" name="org.alitouka.spark.dbscan.RawDataSet">org.alitouka.spark.dbscan.RawDataSet</a> populated with points
+</p></div><dl class="paramcmts block"><dt class="param">sc</dt><dd class="cmt"><p>A SparkContext into which the data should be loaded</p></dd><dt class="param">path</dt><dd class="cmt"><p>A path to the CSV file</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="../../package.html#RawDataSet=org.apache.spark.rdd.RDD[org.apache.spark.dbscan.spatial.Point]" class="extmbr" name="org.apache.spark.dbscan.RawDataSet">org.apache.spark.dbscan.RawDataSet</a> populated with points
 </p></dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.util.io.IOHelper#saveClusteringResult" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="saveClusteringResult(model:org.alitouka.spark.dbscan.DbscanModel,outputPath:String):Unit"></a>
+    </li><li name="org.apache.spark.dbscan.util.io.IOHelper#saveClusteringResult" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="saveClusteringResult(model:org.apache.spark.dbscan.DbscanModel,outputPath:String):Unit"></a>
       <a id="saveClusteringResult(DbscanModel,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -329,13 +329,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">saveClusteringResult</span><span class="params">(<span name="model">model: <a href="../../DbscanModel.html" class="extype" name="org.alitouka.spark.dbscan.DbscanModel">DbscanModel</a></span>, <span name="outputPath">outputPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">saveClusteringResult</span><span class="params">(<span name="model">model: <a href="../../DbscanModel.html" class="extype" name="org.apache.spark.dbscan.DbscanModel">DbscanModel</a></span>, <span name="outputPath">outputPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Saves clustering result into a CSV file.</p><div class="fullcomment"><div class="comment cmt"><p>Saves clustering result into a CSV file. The resulting file will contain the same data as the input file,
 with a cluster ID appended to each record. The order of records is not guaranteed to be the same as in the
 input file
-</p></div><dl class="paramcmts block"><dt class="param">model</dt><dd class="cmt"><p>A <a href="../../DbscanModel.html" class="extype" name="org.alitouka.spark.dbscan.DbscanModel">org.alitouka.spark.dbscan.DbscanModel</a> obtained from Dbscan.train method</p></dd><dt class="param">outputPath</dt><dd class="cmt"><p>Path to a folder where results should be saved. The folder will contain multiple
+</p></div><dl class="paramcmts block"><dt class="param">model</dt><dd class="cmt"><p>A <a href="../../DbscanModel.html" class="extype" name="org.apache.spark.dbscan.DbscanModel">org.apache.spark.dbscan.DbscanModel</a> obtained from Dbscan.train method</p></dd><dt class="param">outputPath</dt><dd class="cmt"><p>Path to a folder where results should be saved. The folder will contain multiple
                   partXXXX files
 </p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">

@@ -1,7 +1,7 @@
-package org.alitouka.spark.dbscan.spatial.rdd
+package org.apache.spark.dbscan.spatial.rdd
 
-import org.alitouka.spark.dbscan.SuiteBase
-import org.alitouka.spark.dbscan.spatial.Box
+import org.apache.spark.dbscan.SuiteBase
+import org.apache.spark.dbscan.spatial.Box
 
 
 class BoxPartitionerSuite extends SuiteBase {

@@ -1,6 +1,6 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
-import org.alitouka.spark.dbscan.util.PointIndexer
+import org.apache.spark.dbscan.util.PointIndexer
 
 
 class PointIndexerSuite extends SuiteBase {

@@ -1,6 +1,6 @@
-package org.alitouka.spark.dbscan.spatial
+package org.apache.spark.dbscan.spatial
 
-import org.alitouka.spark.dbscan.{DbscanSettings, SuiteBase}
+import org.apache.spark.dbscan.{DbscanSettings, SuiteBase}
 
 
 class BoxSuite extends SuiteBase {

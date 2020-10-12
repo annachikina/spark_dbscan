@@ -1,6 +1,6 @@
 name := "spark_dbscan"
 
-organization := "org.alitouka"
+organization := "org.apache"
 
 version := "0.0.4"
 

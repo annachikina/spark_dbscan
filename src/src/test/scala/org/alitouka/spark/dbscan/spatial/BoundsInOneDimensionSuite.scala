@@ -1,6 +1,6 @@
-package org.alitouka.spark.dbscan.spatial
+package org.apache.spark.dbscan.spatial
 
-import org.alitouka.spark.dbscan.SuiteBase
+import org.apache.spark.dbscan.SuiteBase
 
 class BoundsInOneDimensionSuite extends SuiteBase {
 

@@ -1,4 +1,4 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
 
 class DbscanSuiteWith2DPoints extends DbscanSuiteBase {

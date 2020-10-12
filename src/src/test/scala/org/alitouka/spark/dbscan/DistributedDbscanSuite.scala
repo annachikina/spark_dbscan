@@ -1,8 +1,8 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
-import org.alitouka.spark.dbscan.spatial._
-import org.alitouka.spark.dbscan.spatial.rdd.{PointsPartitionedByBoxesRDD, BoxPartitioner}
-import org.alitouka.spark.dbscan.spatial.BoundsInOneDimension._
+import org.apache.spark.dbscan.spatial._
+import org.apache.spark.dbscan.spatial.rdd.{PointsPartitionedByBoxesRDD, BoxPartitioner}
+import org.apache.spark.dbscan.spatial.BoundsInOneDimension._
 
 class DistributedDbscanSuite extends DbscanSuiteBase with TestDatasets {
 

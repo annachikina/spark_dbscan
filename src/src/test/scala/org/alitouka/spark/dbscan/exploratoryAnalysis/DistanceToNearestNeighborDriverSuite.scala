@@ -1,7 +1,7 @@
-package org.alitouka.spark.dbscan.exploratoryAnalysis
+package org.apache.spark.dbscan.exploratoryAnalysis
 
-import org.alitouka.spark.dbscan.{DbscanSettings, SuiteBase, TestDatasets}
-import org.alitouka.spark.dbscan.spatial.PointSortKey
+import org.apache.spark.dbscan.{DbscanSettings, SuiteBase, TestDatasets}
+import org.apache.spark.dbscan.spatial.PointSortKey
 
 
 class DistanceToNearestNeighborDriverSuite extends SuiteBase with TestDatasets {

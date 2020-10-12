@@ -1,6 +1,6 @@
-package org.alitouka.spark.dbscan.util.math
+package org.apache.spark.dbscan.util.math
 
-import org.alitouka.spark.dbscan.SuiteBase
+import org.apache.spark.dbscan.SuiteBase
 import DoubleComparisonOperations._
 
 class DoubleComparisonOperationsSuite extends SuiteBase {

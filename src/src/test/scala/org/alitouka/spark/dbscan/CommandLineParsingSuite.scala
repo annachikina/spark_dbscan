@@ -1,7 +1,7 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
 
-import org.alitouka.spark.dbscan.util.commandLine.{CommonArgs, CommonArgsParser}
+import org.apache.spark.dbscan.util.commandLine.{CommonArgs, CommonArgsParser}
 import org.apache.commons.math3.ml.distance.{ManhattanDistance, EuclideanDistance}
 
 class CommandLineParsingSuite extends DbscanSuiteBase {

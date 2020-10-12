@@ -1,8 +1,8 @@
-package org.alitouka.spark.dbscan.spatial
+package org.apache.spark.dbscan.spatial
 
-import org.alitouka.spark.dbscan.{DbscanSettings, RawDataSet, SuiteBase, TestDatasets}
+import org.apache.spark.dbscan.{DbscanSettings, RawDataSet, SuiteBase, TestDatasets}
 import org.apache.spark.rdd.RDD
-import org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings
+import org.apache.spark.dbscan.spatial.rdd.PartitioningSettings
 import org.apache.commons.math3.ml.distance.DistanceMeasure
 
 class PartitionIndexSuite extends SuiteBase with TestDatasets with DistanceCalculation  {

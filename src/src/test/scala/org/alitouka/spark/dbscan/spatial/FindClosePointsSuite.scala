@@ -1,8 +1,8 @@
-package org.alitouka.spark.dbscan.spatial
+package org.apache.spark.dbscan.spatial
 
 
-import org.alitouka.spark.dbscan.spatial.rdd.PointsPartitionedByBoxesRDD
-import org.alitouka.spark.dbscan.{SuiteBase, DbscanSettings}
+import org.apache.spark.dbscan.spatial.rdd.PointsPartitionedByBoxesRDD
+import org.apache.spark.dbscan.{SuiteBase, DbscanSettings}
 
 
 class FindClosePointsSuite extends SuiteBase {

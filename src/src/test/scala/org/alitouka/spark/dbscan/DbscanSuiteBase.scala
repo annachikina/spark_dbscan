@@ -1,12 +1,12 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
 import org.apache.spark.SparkContext
 
 import org.apache.spark.SparkContext._
 import scala.Some
-import org.alitouka.spark.dbscan.spatial.{PointSortKey, Point}
+import org.apache.spark.dbscan.spatial.{PointSortKey, Point}
 import scala.collection.mutable.WrappedArray.ofDouble
-import org.alitouka.spark.dbscan.util.debug.Clock
+import org.apache.spark.dbscan.util.debug.Clock
 
 class DbscanSuiteBase extends SuiteBase with TestDatasets {
 

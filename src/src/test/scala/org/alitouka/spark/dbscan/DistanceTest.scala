@@ -1,4 +1,4 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
 import org.apache.commons.math3.ml.distance.EuclideanDistance
 import org.scalatest.{FunSuite, Matchers, FlatSpec}

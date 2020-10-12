@@ -1,6 +1,6 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
-import org.alitouka.spark.dbscan.spatial.Point
+import org.apache.spark.dbscan.spatial.Point
 
 
 class PointSuite extends SuiteBase {

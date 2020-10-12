@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>DistributedDbscan - org.alitouka.spark.dbscan.DistributedDbscan</title>
-          <meta name="description" content="DistributedDbscan - org.alitouka.spark.dbscan.DistributedDbscan" />
-          <meta name="keywords" content="DistributedDbscan org.alitouka.spark.dbscan.DistributedDbscan" />
+          <title>DistributedDbscan - org.apache.spark.dbscan.DistributedDbscan</title>
+          <meta name="description" content="DistributedDbscan - org.apache.spark.dbscan.DistributedDbscan" />
+          <meta name="keywords" content="DistributedDbscan org.apache.spark.dbscan.DistributedDbscan" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'org.alitouka.spark.dbscan.DistributedDbscan';
+            var hash = 'org.apache.spark.dbscan.DistributedDbscan';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -25,7 +25,7 @@
         <body class="type">
       <div id="definition">
         <img src="../../../../lib/class_big.png" />
-        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.alitouka">alitouka</a>.<a href="../package.html" class="extype" name="org.alitouka.spark">spark</a>.<a href="package.html" class="extype" name="org.alitouka.spark.dbscan">dbscan</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.apache">apache</a>.<a href="../package.html" class="extype" name="org.apache.spark">spark</a>.<a href="package.html" class="extype" name="org.apache.spark.dbscan">dbscan</a></p>
         <h1>DistributedDbscan</h1>
       </div>
 
@@ -35,14 +35,14 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">DistributedDbscan</span><span class="result"> extends <a href="Dbscan.html" class="extype" name="org.alitouka.spark.dbscan.Dbscan">Dbscan</a> with <span class="extype" name="org.alitouka.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span> with <span class="extype" name="org.apache.spark.Logging">Logging</span></span>
+        <span class="name">DistributedDbscan</span><span class="result"> extends <a href="Dbscan.html" class="extype" name="org.apache.spark.dbscan.Dbscan">Dbscan</a> with <span class="extype" name="org.apache.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span> with <span class="extype" name="org.apache.spark.Logging">Logging</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementation of the DBSCAN algorithm which is capable of parallel processing of the input data.</p><p> Parallel processing consists of 4 high-level steps:</p><ul><li>Density-based data partitioning</li><li>Calculating neighbors of each point</li><li>Clustering data in each partition separately</li><li>Merging clusters found in different partitions
 </li></ul></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="org.alitouka.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span>, <a href="Dbscan.html" class="extype" name="org.alitouka.spark.dbscan.Dbscan">Dbscan</a>, <span class="extype" name="org.apache.spark.Logging">Logging</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="org.apache.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span>, <a href="Dbscan.html" class="extype" name="org.apache.spark.dbscan.Dbscan">Dbscan</a>, <span class="extype" name="org.apache.spark.Logging">Logging</span>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -60,7 +60,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.alitouka.spark.dbscan.DistributedDbscan"><span>DistributedDbscan</span></li><li class="in" name="org.alitouka.spark.dbscan.spatial.DistanceCalculation"><span>DistanceCalculation</span></li><li class="in" name="org.alitouka.spark.dbscan.Dbscan"><span>Dbscan</span></li><li class="in" name="org.apache.spark.Logging"><span>Logging</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.apache.spark.dbscan.DistributedDbscan"><span>DistributedDbscan</span></li><li class="in" name="org.apache.spark.dbscan.spatial.DistanceCalculation"><span>DistanceCalculation</span></li><li class="in" name="org.apache.spark.dbscan.Dbscan"><span>Dbscan</span></li><li class="in" name="org.apache.spark.Logging"><span>Logging</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -80,8 +80,8 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="org.alitouka.spark.dbscan.DistributedDbscan#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(settings:org.alitouka.spark.dbscan.DbscanSettings,partitioningSettings:org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings):org.alitouka.spark.dbscan.DistributedDbscan"></a>
+              <ol><li name="org.apache.spark.dbscan.DistributedDbscan#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(settings:org.apache.spark.dbscan.DbscanSettings,partitioningSettings:org.apache.spark.dbscan.spatial.rdd.PartitioningSettings):org.apache.spark.dbscan.DistributedDbscan"></a>
       <a id="&lt;init&gt;:DistributedDbscan"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -89,11 +89,11 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DistributedDbscan</span><span class="params">(<span name="settings">settings: <a href="DbscanSettings.html" class="extype" name="org.alitouka.spark.dbscan.DbscanSettings">DbscanSettings</a></span>, <span name="partitioningSettings">partitioningSettings: <a href="spatial/rdd/PartitioningSettings.html" class="extype" name="org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings">PartitioningSettings</a> = <span class="defval" name="new org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings(rdd.this.PartitioningSettings.&lt;init&gt;$default$1, rdd.this.PartitioningSettings.&lt;init&gt;$default$2, rdd.this.PartitioningSettings.&lt;init&gt;$default$3, rdd.this.PartitioningSettings.&lt;init&gt;$default$4)">...</span></span>)</span>
+        <span class="name">DistributedDbscan</span><span class="params">(<span name="settings">settings: <a href="DbscanSettings.html" class="extype" name="org.apache.spark.dbscan.DbscanSettings">DbscanSettings</a></span>, <span name="partitioningSettings">partitioningSettings: <a href="spatial/rdd/PartitioningSettings.html" class="extype" name="org.apache.spark.dbscan.spatial.rdd.PartitioningSettings">PartitioningSettings</a> = <span class="defval" name="new org.apache.spark.dbscan.spatial.rdd.PartitioningSettings(rdd.this.PartitioningSettings.&lt;init&gt;$default$1, rdd.this.PartitioningSettings.&lt;init&gt;$default$2, rdd.this.PartitioningSettings.&lt;init&gt;$default$3, rdd.this.PartitioningSettings.&lt;init&gt;$default$4)">...</span></span>)</span>
       </span>
       </h4>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">settings</dt><dd class="cmt"><p>Parameters of the algorithm. See <a href="DbscanSettings.html" class="extype" name="org.alitouka.spark.dbscan.DbscanSettings">org.alitouka.spark.dbscan.DbscanSettings</a>
-                for details</p></dd><dt class="param">partitioningSettings</dt><dd class="cmt"><p>Partitioning settings. See <a href="spatial/rdd/PartitioningSettings.html" class="extype" name="org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings">org.alitouka.spark.dbscan.spatial.rdd.PartitioningSettings</a>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">settings</dt><dd class="cmt"><p>Parameters of the algorithm. See <a href="DbscanSettings.html" class="extype" name="org.apache.spark.dbscan.DbscanSettings">org.apache.spark.dbscan.DbscanSettings</a>
+                for details</p></dd><dt class="param">partitioningSettings</dt><dd class="cmt"><p>Partitioning settings. See <a href="spatial/rdd/PartitioningSettings.html" class="extype" name="org.apache.spark.dbscan.spatial.rdd.PartitioningSettings">org.apache.spark.dbscan.spatial.rdd.PartitioningSettings</a>
                             for details
 </p></dd></dl></div>
     </li></ol>
@@ -183,8 +183,8 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.spatial.DistanceCalculation#calculateDistance" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="calculateDistance(pt1:org.alitouka.spark.dbscan.PointCoordinates,pt2:org.alitouka.spark.dbscan.PointCoordinates)(implicitdistanceMeasure:org.apache.commons.math3.ml.distance.DistanceMeasure):Double"></a>
+    </li><li name="org.apache.spark.dbscan.spatial.DistanceCalculation#calculateDistance" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculateDistance(pt1:org.apache.spark.dbscan.PointCoordinates,pt2:org.apache.spark.dbscan.PointCoordinates)(implicitdistanceMeasure:org.apache.commons.math3.ml.distance.DistanceMeasure):Double"></a>
       <a id="calculateDistance(PointCoordinates,PointCoordinates)(DistanceMeasure):Double"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -192,12 +192,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calculateDistance</span><span class="params">(<span name="pt1">pt1: <a href="package.html#PointCoordinates=collection.mutable.WrappedArray.ofDouble" class="extmbr" name="org.alitouka.spark.dbscan.PointCoordinates">PointCoordinates</a></span>, <span name="pt2">pt2: <a href="package.html#PointCoordinates=collection.mutable.WrappedArray.ofDouble" class="extmbr" name="org.alitouka.spark.dbscan.PointCoordinates">PointCoordinates</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="distanceMeasure">distanceMeasure: <span class="extype" name="org.apache.commons.math3.ml.distance.DistanceMeasure">DistanceMeasure</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">calculateDistance</span><span class="params">(<span name="pt1">pt1: <a href="package.html#PointCoordinates=collection.mutable.WrappedArray.ofDouble" class="extmbr" name="org.apache.spark.dbscan.PointCoordinates">PointCoordinates</a></span>, <span name="pt2">pt2: <a href="package.html#PointCoordinates=collection.mutable.WrappedArray.ofDouble" class="extmbr" name="org.apache.spark.dbscan.PointCoordinates">PointCoordinates</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="distanceMeasure">distanceMeasure: <span class="extype" name="org.apache.commons.math3.ml.distance.DistanceMeasure">DistanceMeasure</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>DistanceCalculation</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.spatial.DistanceCalculation#calculateDistance" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="calculateDistance(pt1:org.alitouka.spark.dbscan.spatial.Point,pt2:org.alitouka.spark.dbscan.spatial.Point)(implicitdistanceMeasure:org.apache.commons.math3.ml.distance.DistanceMeasure):Double"></a>
+    </li><li name="org.apache.spark.dbscan.spatial.DistanceCalculation#calculateDistance" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calculateDistance(pt1:org.apache.spark.dbscan.spatial.Point,pt2:org.apache.spark.dbscan.spatial.Point)(implicitdistanceMeasure:org.apache.commons.math3.ml.distance.DistanceMeasure):Double"></a>
       <a id="calculateDistance(Point,Point)(DistanceMeasure):Double"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -205,7 +205,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calculateDistance</span><span class="params">(<span name="pt1">pt1: <a href="spatial/Point.html" class="extype" name="org.alitouka.spark.dbscan.spatial.Point">Point</a></span>, <span name="pt2">pt2: <a href="spatial/Point.html" class="extype" name="org.alitouka.spark.dbscan.spatial.Point">Point</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="distanceMeasure">distanceMeasure: <span class="extype" name="org.apache.commons.math3.ml.distance.DistanceMeasure">DistanceMeasure</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">calculateDistance</span><span class="params">(<span name="pt1">pt1: <a href="spatial/Point.html" class="extype" name="org.apache.spark.dbscan.spatial.Point">Point</a></span>, <span name="pt2">pt2: <a href="spatial/Point.html" class="extype" name="org.apache.spark.dbscan.spatial.Point">Point</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="distanceMeasure">distanceMeasure: <span class="extype" name="org.apache.commons.math3.ml.distance.DistanceMeasure">DistanceMeasure</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>DistanceCalculation</dd></dl></div>
@@ -228,8 +228,8 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.Dbscan#distanceAnalyzer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="distanceAnalyzer:org.alitouka.spark.dbscan.spatial.DistanceAnalyzer"></a>
+    </li><li name="org.apache.spark.dbscan.Dbscan#distanceAnalyzer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="distanceAnalyzer:org.apache.spark.dbscan.spatial.DistanceAnalyzer"></a>
       <a id="distanceAnalyzer:DistanceAnalyzer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -237,10 +237,10 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">distanceAnalyzer</span><span class="result">: <span class="extype" name="org.alitouka.spark.dbscan.spatial.DistanceAnalyzer">DistanceAnalyzer</span></span>
+        <span class="name">distanceAnalyzer</span><span class="result">: <span class="extype" name="org.apache.spark.dbscan.spatial.DistanceAnalyzer">DistanceAnalyzer</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Dbscan.html" class="extype" name="org.alitouka.spark.dbscan.Dbscan">Dbscan</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="Dbscan.html" class="extype" name="org.apache.spark.dbscan.Dbscan">Dbscan</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -325,8 +325,8 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.spatial.DistanceCalculation#isPointCloseToAnyBound" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isPointCloseToAnyBound(pt:org.alitouka.spark.dbscan.spatial.Point,box:org.alitouka.spark.dbscan.spatial.Box,threshold:Double):Boolean"></a>
+    </li><li name="org.apache.spark.dbscan.spatial.DistanceCalculation#isPointCloseToAnyBound" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isPointCloseToAnyBound(pt:org.apache.spark.dbscan.spatial.Point,box:org.apache.spark.dbscan.spatial.Box,threshold:Double):Boolean"></a>
       <a id="isPointCloseToAnyBound(Point,Box,Double):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -334,12 +334,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isPointCloseToAnyBound</span><span class="params">(<span name="pt">pt: <a href="spatial/Point.html" class="extype" name="org.alitouka.spark.dbscan.spatial.Point">Point</a></span>, <span name="box">box: <span class="extype" name="org.alitouka.spark.dbscan.spatial.Box">Box</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isPointCloseToAnyBound</span><span class="params">(<span name="pt">pt: <a href="spatial/Point.html" class="extype" name="org.apache.spark.dbscan.spatial.Point">Point</a></span>, <span name="box">box: <span class="extype" name="org.apache.spark.dbscan.spatial.Box">Box</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>DistanceCalculation</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.spatial.DistanceCalculation#isPointCloseToBound" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isPointCloseToBound(pt:org.alitouka.spark.dbscan.spatial.Point,bound:org.alitouka.spark.dbscan.spatial.BoundsInOneDimension,dimension:Int,threshold:Double):Boolean"></a>
+    </li><li name="org.apache.spark.dbscan.spatial.DistanceCalculation#isPointCloseToBound" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isPointCloseToBound(pt:org.apache.spark.dbscan.spatial.Point,bound:org.apache.spark.dbscan.spatial.BoundsInOneDimension,dimension:Int,threshold:Double):Boolean"></a>
       <a id="isPointCloseToBound(Point,BoundsInOneDimension,Int,Double):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -347,7 +347,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isPointCloseToBound</span><span class="params">(<span name="pt">pt: <a href="spatial/Point.html" class="extype" name="org.alitouka.spark.dbscan.spatial.Point">Point</a></span>, <span name="bound">bound: <span class="extype" name="org.alitouka.spark.dbscan.spatial.BoundsInOneDimension">BoundsInOneDimension</span></span>, <span name="dimension">dimension: <span class="extype" name="scala.Int">Int</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isPointCloseToBound</span><span class="params">(<span name="pt">pt: <a href="spatial/Point.html" class="extype" name="org.apache.spark.dbscan.spatial.Point">Point</a></span>, <span name="bound">bound: <span class="extype" name="org.apache.spark.dbscan.spatial.BoundsInOneDimension">BoundsInOneDimension</span></span>, <span name="dimension">dimension: <span class="extype" name="scala.Int">Int</span></span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>DistanceCalculation</dd></dl></div>
@@ -546,8 +546,8 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.alitouka.spark.dbscan.DistributedDbscan#run" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="run(data:org.alitouka.spark.dbscan.RawDataSet):org.alitouka.spark.dbscan.DbscanModel"></a>
+    </li><li name="org.apache.spark.dbscan.DistributedDbscan#run" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run(data:org.apache.spark.dbscan.RawDataSet):org.apache.spark.dbscan.DbscanModel"></a>
       <a id="run(RawDataSet):DbscanModel"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -555,13 +555,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="params">(<span name="data">data: <a href="package.html#RawDataSet=org.apache.spark.rdd.RDD[org.alitouka.spark.dbscan.spatial.Point]" class="extmbr" name="org.alitouka.spark.dbscan.RawDataSet">RawDataSet</a></span>)</span><span class="result">: <a href="DbscanModel.html" class="extype" name="org.alitouka.spark.dbscan.DbscanModel">DbscanModel</a></span>
+        <span class="name">run</span><span class="params">(<span name="data">data: <a href="package.html#RawDataSet=org.apache.spark.rdd.RDD[org.apache.spark.dbscan.spatial.Point]" class="extmbr" name="org.apache.spark.dbscan.RawDataSet">RawDataSet</a></span>)</span><span class="result">: <a href="DbscanModel.html" class="extype" name="org.apache.spark.dbscan.DbscanModel">DbscanModel</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Runs the clustering algorithm
 </p><div class="fullcomment"><div class="comment cmt"><p>Runs the clustering algorithm
-</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>A data set to be clustered. See <a href="package.html#RawDataSet=org.apache.spark.rdd.RDD[org.alitouka.spark.dbscan.spatial.Point]" class="extmbr" name="org.alitouka.spark.dbscan.RawDataSet">org.alitouka.spark.dbscan.RawDataSet</a> for details</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="DbscanModel.html" class="extype" name="org.alitouka.spark.dbscan.DbscanModel">org.alitouka.spark.dbscan.DbscanModel</a> object which represents clustering results
-</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.alitouka.spark.dbscan.DistributedDbscan">DistributedDbscan</a> → <a href="Dbscan.html" class="extype" name="org.alitouka.spark.dbscan.Dbscan">Dbscan</a></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>A data set to be clustered. See <a href="package.html#RawDataSet=org.apache.spark.rdd.RDD[org.apache.spark.dbscan.spatial.Point]" class="extmbr" name="org.apache.spark.dbscan.RawDataSet">org.apache.spark.dbscan.RawDataSet</a> for details</p></dd><dt>returns</dt><dd class="cmt"><p>A <a href="DbscanModel.html" class="extype" name="org.apache.spark.dbscan.DbscanModel">org.apache.spark.dbscan.DbscanModel</a> object which represents clustering results
+</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="org.apache.spark.dbscan.DistributedDbscan">DistributedDbscan</a> → <a href="Dbscan.html" class="extype" name="org.apache.spark.dbscan.Dbscan">Dbscan</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -654,10 +654,10 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.alitouka.spark.dbscan.spatial.DistanceCalculation">
-              <h3>Inherited from <span class="extype" name="org.alitouka.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span></h3>
-            </div><div class="parent" name="org.alitouka.spark.dbscan.Dbscan">
-              <h3>Inherited from <a href="Dbscan.html" class="extype" name="org.alitouka.spark.dbscan.Dbscan">Dbscan</a></h3>
+        <div class="parent" name="org.apache.spark.dbscan.spatial.DistanceCalculation">
+              <h3>Inherited from <span class="extype" name="org.apache.spark.dbscan.spatial.DistanceCalculation">DistanceCalculation</span></h3>
+            </div><div class="parent" name="org.apache.spark.dbscan.Dbscan">
+              <h3>Inherited from <a href="Dbscan.html" class="extype" name="org.apache.spark.dbscan.Dbscan">Dbscan</a></h3>
             </div><div class="parent" name="org.apache.spark.Logging">
               <h3>Inherited from <span class="extype" name="org.apache.spark.Logging">Logging</span></h3>
             </div><div class="parent" name="scala.Serializable">

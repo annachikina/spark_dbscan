@@ -1,4 +1,4 @@
-package org.alitouka.spark.dbscan
+package org.apache.spark.dbscan
 
 import org.apache.spark.SparkContext._
 import scala.collection.mutable.WrappedArray.ofDouble
