@@ -6,8 +6,8 @@ import org.apache.spark.SparkContext
 import org.apache.spark.mllib.pmml.PMMLExportable
 import org.apache.spark.mllib.util.{Loader, Saveable}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.SparkSession
-
+import org.apache.spark.sql.types.{DoubleType, IntegerType, LongType, StringType, StructField, StructType}
+import org.apache.spark.sql.{Row, SparkSession}
 import org.json4s._
 import org.json4s.JsonDSL._
 import org.json4s.jackson.JsonMethods._
@@ -135,9 +135,11 @@ object DbscanModel extends Loader[DbscanModel] {
   val UndefinedCluster: ClusterId = -2
 
   override def load(sc: SparkContext, path: String): DbscanModel = {
+    println("INSIDE LOAD")
     val (loadedClassName, version, metadata) = org.apache.spark.mllib.util.Loader.loadMetadata(sc, path)
 //    val classNameV1_0 = SaveLoadV1_0.thisClassName
     val classNameV2_0 = SaveLoadV2_0.thisClassName
+    println("classNameV2_0", classNameV2_0)
     (loadedClassName, version) match {
 //      case (className, "1.0") if className == classNameV1_0 =>
 //        SaveLoadV1_0.load(sc, path)
@@ -165,7 +167,18 @@ object DbscanModel extends Loader[DbscanModel] {
           ~ ("distanceMeasure" -> model.distanceMeasure)))
       sc.parallelize(Seq(metadata), 1).saveAsTextFile(Loader.metadataPath(path))
 //      spark.createDataFrame(model.points).write.parquet(Loader.dataPath(path))
-      model.points.coalesce(1).saveAsTextFile(Loader.metadataPath(path))
+      println("model points")
+      val points = model.points.map(m => Row(m.coordinates(0), m.coordinates(1), m.pointId, m.boxId, m.clusterId, m.precomputedNumberOfNeighbors))
+      val schema = StructType(Array(
+        StructField("x", DoubleType),
+        StructField("y", DoubleType),
+        StructField("pointId", LongType),
+        StructField("boxId", IntegerType),
+        StructField("clusterId", LongType),
+        StructField("neighbors", LongType)))
+      spark.createDataFrame(points, schema).write.parquet(Loader.dataPath(path))
+//        .coalesce(1)
+//        .saveAsTextFile(Loader.dataPath(path))
     }
 
     def load(sc: SparkContext, path: String): DbscanModel = {
@@ -186,11 +199,14 @@ object DbscanModel extends Loader[DbscanModel] {
         case """ManhattanDistance""" => new ManhattanDistance()
         case _ => new EuclideanDistance()
       }
-//      val points = spark.read.parquet(Loader.dataPath(path))
-//      val allPoints = points.rdd
-      val stringRDD: RDD[String] = spark.sparkContext.textFile(Loader.dataPath(path))
-      val arrayRDD = stringRDD.map(_.split(",").toSeq.toArray)
-      val allPoints: RDD[Point] = arrayRDD.map(line => new Point(line.map(_.toDouble)))
+      val df = spark.read.parquet(Loader.dataPath(path))
+      val pointsRdd = df.rdd // .map(m => m.toSeq.toArray)
+
+      def create2DPoint (x: Double, y: Double, idx: PointId = 0, boxId: BoxId, clusterId: ClusterId, neighbors: Long): Point = {
+        new Point ( new PointCoordinates (Array (x, y)), idx, boxId, Math.sqrt (x*x+y*y), neighbors, clusterId)
+      }
+
+      val allPoints: RDD[Point] = pointsRdd.map(m => create2DPoint(m.getDouble(0), m.getDouble(1), m.getLong(2), m.getInt(3), m.getLong(4), m.getLong(5)))
       val settings = new DbscanSettings()
         .withEpsilon(eps)
         .withNumberOfPoints(minPts)

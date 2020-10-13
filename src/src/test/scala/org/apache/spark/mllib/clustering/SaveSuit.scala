@@ -17,15 +17,15 @@ class SaveSuit extends DbscanSuiteBase {
   ))
 
 
-  val settings1 = new DbscanSettings ().withEpsilon(1.5).withNumberOfPoints(3)
-  val model1 = new DbscanModel (clusteredPoints, settings1)
+  val settings3 = new DbscanSettings ().withEpsilon(1.5).withNumberOfPoints(3)
+  val model3 = new DbscanModel (clusteredPoints, settings3)
 
-  val settings2 = new DbscanSettings ().withEpsilon(1.5).withNumberOfPoints(4).withTreatBorderPointsAsNoise(true)
-  val model2 = new DbscanModel (clusteredPoints, settings2)
+  val settings4 = new DbscanSettings ().withEpsilon(1.5).withNumberOfPoints(4).withTreatBorderPointsAsNoise(true)
+  val model4 = new DbscanModel (clusteredPoints, settings4)
 
   test("Test 1. Command: |fit than save") {
-    model1.save(sc, "model1")
-    val savedModel = DbscanModel.load(sc, "model1")
+    model3.save(sc, "testmodel")
+    val savedModel = DbscanModel.load(sc, "testmodel")
 
     val predictedClusterId = savedModel.predict(create2DPoint (0.5, 0.5))
 
